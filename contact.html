@@ -1,67 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact — JDE Luxury Rental</title>
-  <meta name="description" content="Request a quote for luxury & supercar rentals across Europe.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — JDE Luxury Rental | JDE Luxury Rental</title>
+  <link rel="canonical" href="https://example.com/contact.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Contact JDE Luxury Rental for luxury car hire across Europe. WhatsApp and email quotes in seconds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="Contact — JDE Luxury Rental | JDE Luxury Rental" />
+  <meta property="og:description" content="Contact JDE Luxury Rental for luxury car hire across Europe. WhatsApp and email quotes in seconds." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541443131876-b8dfbd40c140?q=80&w=1600&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏎️</text></svg>">
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(8px); }
+    .sticky-cta { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); }
+  </style>
 </head>
-<body>
-  
-<header>
-  <div class="nav">
-    <div class="brand">JDE Luxury Rental</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="fleet.html">Fleet</a>
-      <a href="locations.html">Locations</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a class="btn" href="contact.html">Get a Quote</a>
-    </nav>
-  </div>
-</header>
-
-  <section class="section">
-    <h2>Get a Quote</h2>
-    <form class="form" method="POST" action="https://formspree.io/f/xbldkzda">
-      <input name="name" placeholder="Your name" required>
-      <input name="email" type="email" placeholder="Email" required>
-      <input name="phone" placeholder="WhatsApp / Phone">
-      <input name="car" placeholder="Car (e.g., Ferrari 812 Superfast)">
-      <input name="dates" placeholder="Dates & city (e.g., 10–12 Sept, Milan)">
-      <textarea name="message" placeholder="Extra details"></textarea>
-      <button class="btn" type="submit">Request quote</button>
-      <p class="small">Or email us at <a href="mailto:jdeluxuryrental@gmail.com">jdeluxuryrental@gmail.com</a> — WhatsApp <a href="https://wa.me/13473769433" target="_blank">+1 347 376 9433</a></p>
-    </form>
-  </section>
-  
-<footer>
-  <div class="footer">
-    <div>
-      <h4>JDE Luxury Rental</h4>
-      <p>European luxury & supercar rental. Concierge delivery to hotels, airports & private villas.</p>
-      <div class="badges">
-        <span class="badge">Pan‑European coverage</span>
-        <span class="badge">24/7 support</span>
-        <span class="badge">No hidden fees</span>
+<body class="bg-neutral-950 text-white font-[Inter]">
+  <header class="fixed top-0 inset-x-0 z-50 bg-neutral-950/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html" class="text-xl sm:text-2xl font-extrabold tracking-tight">JDE<span class="text-amber-400">.</span></a>
+        <nav class="hidden md:flex gap-6 text-sm text-neutral-300">
+          <a href="fleet.html" class="hover:text-white">Fleet</a>
+          <a href="locations.html" class="hover:text-white">Locations</a>
+          <a href="how.html" class="hover:text-white">FAQ</a>
+          <a href="faq.html" class="hover:text-white">FAQ</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </nav>
+        <a href="index.html#quote" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-black px-4 py-2 font-semibold shadow-lg hover:brightness-95">Get a Quote</a>
       </div>
     </div>
-    <div>
-      <h4>Contact</h4>
-      <p>Email: <a href="mailto:jdeluxuryrental@gmail.com">jdeluxuryrental@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/13473769433" target="_blank">+1 347 376 9433</a></p>
-      <p>Instagram: <a href="https://instagram.com/jdeluxuryrental_">@jdeluxuryrental_</a></p>
-    </div>
-    <div>
-      <h4>Legal</h4>
-      <p><a href="privacy.html">Privacy Policy</a></p>
-      <p><a href="terms.html">Terms & Conditions</a></p>
-      <p><a href="sitemap.xml">Sitemap</a></p>
+  </header>
+  <main class="pt-20">
+
+<section class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl sm:text-4xl font-extrabold mb-8">Contact</h1>
+    <p class="text-neutral-300 mb-6">We respond fast. For the quickest quote, include dates, pickup city and preferred car.</p>
+    <div class="bg-white/5 rounded-2xl p-6 sm:p-8">
+      <form class="grid sm:grid-cols-2 gap-4 mt-2" onsubmit="(function(e){e.preventDefault(); const n=document.getElementById('name').value.trim(); const p=document.getElementById('phone').value.trim(); const c=document.getElementById('car').value.trim(); const f=document.getElementById('from').value; const t=document.getElementById('to').value; const pk=document.getElementById('pickup').value.trim(); const sub=encodeURIComponent('Quote Request — ' + (c||'Supercar')); const body=encodeURIComponent(`Name: ${'{'}n{'}'}\nPhone: ${'{'}p{'}'}\nCar: ${'{'}c{'}'}\nFrom: ${'{'}f{'}'}\nTo: ${'{'}t{'}'}\nDelivery/Pick-up: ${'{'}pk{'}'}`); window.location.href=`mailto:booking@jdeluxuryrental.com?subject=${'{'}sub{'}'}&body=${'{'}body{'}'}`; })(event)">
+        <div><label class="text-sm text-neutral-300">Name</label><input id="name" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required /></div>
+        <div><label class="text-sm text-neutral-300">Phone</label><input id="phone" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required /></div>
+        <div><label class="text-sm text-neutral-300">Preferred Car</label><input id="car" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" placeholder="e.g., Ferrari 296" /></div>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="text-sm text-neutral-300">From</label><input id="from" type="date" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required /></div>
+          <div><label class="text-sm text-neutral-300">To</label><input id="to" type="date" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required /></div>
+        </div>
+        <div class="sm:col-span-2"><label class="text-sm text-neutral-300">Delivery / Collection</label><input id="pickup" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" placeholder="e.g., Milan Linate, 10:00" /></div>
+        <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 mt-2">
+          <a href="https://wa.me/13473769433?text=Hi%20JDE%20Luxury%20Rental%2C%20I%27d%20like%20a%20quote." target="_blank" class="flex-1 text-center rounded-2xl bg-green-500 text-black px-5 py-3 font-semibold">WhatsApp</a>
+          <button type="submit" class="flex-1 rounded-2xl bg-amber-400 text-black px-5 py-3 font-semibold">Send by Email</button>
+        </div>
+      </form>
     </div>
   </div>
-</footer>
+</section>
 
+  </main>
+  <section class="py-16 bg-gradient-to-b from-neutral-950 to-neutral-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div class="bg-white/5 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Contact</h3>
+          <ul class="mt-3 space-y-2 text-neutral-300 text-sm">
+            <li>Email: <a href="mailto:booking@jdeluxuryrental.com" class="text-amber-400">booking@jdeluxuryrental.com</a></li>
+            <li>Phone / WhatsApp: <a href="tel:+390000000000" class="text-amber-400">+1 347 376 9433</a></li>
+            <li>Instagram: <a href="https://instagram.com/jdeluxuryrental_" target="_blank" class="text-amber-400">@jdeluxuryrental_</a></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1600&auto=format&fit=crop" alt="Luxury garage" class="w-full h-56 object-cover"/>
+        </div>
+      </div>
+      <p class="text-xs text-neutral-500 mt-6">© 2025 JDE Luxury Rental. All rights reserved.</p>
+    </div>
+  </section>
+  <div class="sticky-cta z-50">
+    <a href="index.html#quote" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-black px-6 py-3 font-semibold shadow-lg">Get Instant Quote</a>
+  </div>
 </body>
 </html>
