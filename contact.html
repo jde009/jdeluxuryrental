@@ -1,13 +1,12 @@
-
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — JDE Luxury Rental</title>
-  <meta name="description" content="Get an instant quote for luxury & supercar rental in Europe. WhatsApp, email or Instagram DM.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Contact JDE Luxury Rental: WhatsApp, email or form for instant quotes.">
   <link rel="canonical" href="https://jde009.github.io/jdeluxuryrental/contact.html">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
@@ -16,11 +15,10 @@
     <nav>
       <a href="fleet.html">Fleet</a>
       <a href="locations.html">Locations</a>
-      <a href="how.html">How It Works</a>
       <a href="faq.html">FAQ</a>
       <a href="about.html">About</a>
-      <a class="btn" href="contact.html">Get a Quote</a>
-    </nav>
+      <a class="btn btn-brand" href="contact.html">Get a Quote</a>
+  </nav>
   </div>
 </header>
 
@@ -29,18 +27,25 @@
   <div class="contact-grid">
     <div class="card">
       <h2>Quick actions</h2>
-      <p><a class="btn btn-accent" href="https://wa.me/13473769433" target="_blank">WhatsApp us</a></p>
+      <p><a class="btn btn-brand" href="https://wa.me/13473769433" target="_blank">WhatsApp us</a></p>
       <p><a class="btn" href="mailto:jdeluxuryrental@gmail.com">Email us</a></p>
       <p><a class="btn" href="https://instagram.com/jdeluxuryrental_" target="_blank">Instagram DM</a></p>
+      <p class="muted">Fastest response via WhatsApp.</p>
     </div>
     <div class="card">
-      <h2>What to include</h2>
-      <ul class="bullet">
-        <li>Car model & dates</li>
-        <li>Pickup/drop-off location</li>
-        <li>Driver age & license country</li>
-        <li>Any extras (delivery to hotel/villa, chauffeur, child seats)</li>
-      </ul>
+      <h2>Request a quote by email</h2>
+      <form class="jde-form" action="https://formsubmit.co/jdeluxuryrental@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New quote request">
+        <input type="hidden" name="_captcha" value="false">
+        <label>Full Name<br><input name="name" required></label>
+        <label>Email<br><input type="email" name="email" required></label>
+        <label>Phone / WhatsApp<br><input name="phone"></label>
+        <label>City<br><input name="city" placeholder="e.g., Milan"></label>
+        <label>Dates<br><input name="dates" placeholder="e.g., 12–15 Sept"></label>
+        <label>Preferred Car<br><input name="car" placeholder="e.g., Ferrari 812 Superfast"></label>
+        <label>Message<br><textarea name="message" rows="5" placeholder="Anything else we should know?"></textarea></label>
+        <button class="btn btn-brand" type="submit">Send request</button>
+      </form>
       <p class="muted">Prices vary by season (high/low), location and availability.</p>
     </div>
   </div>
@@ -68,4 +73,3 @@
 </footer>
 </body>
 </html>
-

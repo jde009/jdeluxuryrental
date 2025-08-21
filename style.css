@@ -37,3 +37,29 @@ a{color:var(--fg);text-decoration:none}
 
 .site-footer{border-top:1px solid var(--line);margin-top:56px;padding:28px 0;background:#0b0b0b}
 .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+
+
+/* --- JDE v2 tweaks --- */
+.btn{display:inline-block;padding:12px 18px;border-radius:12px;border:1px solid var(--line);background:#1a1a1a;transition:transform .06s ease, filter .2s}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.btn-brand{background:#ffca28;color:#171717;border-color:#ffca28;font-weight:800}
+.btn-outline{background:transparent}
+.hero .subline{max-width:920px}
+.hero .badges{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0 0}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #2a2a2a;background:#141414;color:#eaeaea;font-size:13px}
+.faq-hero{position:relative;min-height:280px;display:grid;place-items:center;background:#111;color:#fff;text-align:center}
+.faq-hero::before{content:"";position:absolute;inset:0;background:
+linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.75)),
+url('assets/cars/ferrari-812-superfast.jpg') center/cover no-repeat;z-index:-1}
+.faq-hero h1{margin:0 0 6px}
+.faq-list details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
+.faq-list summary{cursor:pointer;font-weight:700;list-style:none}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list details[open]{background:#181818}
+.about-hero{display:grid;grid-template-columns:1.2fr .8fr;gap:22px}
+@media(max-width:820px){.about-hero{grid-template-columns:1fr}}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.kpi b{font-size:24px}
+form.jde-form{display:grid;gap:10px;max-width:640px}
+form.jde-form input, form.jde-form textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff}
