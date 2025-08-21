@@ -1,74 +1,147 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JDE Luxury Rental — Luxury & Supercar Hire in Europe</title>
-  <meta name="description" content="Luxury & supercar rental across Europe. Ferrari, Lamborghini, Porsche & more with concierge delivery, transparent quotes and 24/7 support.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://jde009.github.io/jdeluxuryrental/index.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JDE Luxury Rental — Luxury & Supercar Rental in Europe</title>
+  <link rel="canonical" href="https://example.com/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="JDE Luxury Rental delivers luxury & supercar rentals across Europe. Luxury car hire across Europe: Ferrari, Lamborghini, Porsche, McLaren, Rolls‑Royce. Concierge delivery to hotels, airports & villas. Transparent contracts, secure payments, 24/7 assistance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="JDE Luxury Rental — European Supercar Rental Brokerage | Luxury Car Hire Broker" />
+  <meta property="og:description" content="JDE Luxury Rental delivers luxury & supercar rentals across Europe. Luxury car hire across Europe: Ferrari, Lamborghini, Porsche, McLaren, Rolls‑Royce. Concierge delivery to hotels, airports & villas. Transparent contracts, secure payments, 24/7 assistance." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541443131876-b8dfbd40c140?q=80&w=1600&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏎️</text></svg>">
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(8px); }
+    .sticky-cta { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); }
+  </style>
 </head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">JDE Luxury Rental</a>
-    <nav>
-      <a href="fleet.html">Fleet</a>
-      <a href="locations.html">Locations</a>
-      
-      <a href="faq.html">FAQ</a>
-      <a href="about.html">About</a>
-      <a class="btn" href="contact.html">Get a Quote</a>
-  </nav>
+<body class="bg-neutral-950 text-white font-[Inter]">
+  <header class="fixed top-0 inset-x-0 z-50 bg-neutral-950/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html" class="text-xl sm:text-2xl font-extrabold tracking-tight">JDE<span class="text-amber-400">.</span></a>
+        <nav class="hidden md:flex gap-6 text-sm text-neutral-300">
+          <a href="fleet.html" class="hover:text-white">Fleet</a>
+          <a href="locations.html" class="hover:text-white">Locations</a>
+          
+          <a href="faq.html" class="hover:text-white">FAQ</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </nav>
+        <a href="index.html#quote" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-black px-4 py-2 font-semibold shadow-lg hover:brightness-95">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+  <main class="pt-20">
+
+  <!-- HERO -->
+  <section class="relative min-h-[80vh] grid place-items-center overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=2200&auto=format&fit=crop" alt="Luxury Supercar" class="absolute inset-0 w-full h-full object-cover opacity-40"/>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-neutral-950"></div>
+    <div class="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-24 text-center">
+      <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight">European Luxury & Supercar Rental — Fast, Transparent, Effortless</h1>
+      <p class="mt-4 text-neutral-300 max-w-3xl mx-auto">Book Ferrari, Lamborghini, Porsche, McLaren, Rolls‑Royce and more across Europe. Broker‑only access to the best rates and availability. Concierge delivery, crystal‑clear contracts, flexible payments, and 24/7 dedicated assistance.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="fleet.html" class="rounded-2xl bg-white/10 backdrop-blur px-5 py-3 hover:bg-white/20">Explore Fleet</a>
+        <a href="#quote" class="rounded-2xl bg-amber-400 text-black px-5 py-3 font-semibold shadow">Get Instant Quote</a>
+      </div>
+      <div class="mt-6 text-xs text-neutral-400">Pan‑European coverage • Delivery to hotels, airports & private residences • No hidden fees</div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPS -->
+  <section class="py-12 border-y border-white/5 bg-gradient-to-b from-neutral-950 to-neutral-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-white/5">
+        <div class="text-2xl font-bold">60s</div>
+        <p class="text-neutral-300 text-sm">Instant WhatsApp or email quote. Zero friction.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5">
+        <div class="text-2xl font-bold">24/7</div>
+        <p class="text-neutral-300 text-sm">Dedicated assistance and on‑road support.</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white/5">
+        <div class="text-2xl font-bold">Clear €</div>
+        <p class="text-neutral-300 text-sm">Transparent contracts, deposits, and policies.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE FORM -->
+  <section id="quote" class="py-20 bg-gradient-to-b from-neutral-950 to-neutral-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white/5 rounded-2xl p-6 sm:p-8">
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Get Your Instant Quote</h2>
+        <p class="text-neutral-300 text-sm mt-2">No payment now. We reply with availability and best brokered rate.</p>
+        <form class="grid sm:grid-cols-2 gap-4 mt-6" onsubmit="(function(e){e.preventDefault(); const n=document.getElementById('name').value.trim(); const p=document.getElementById('phone').value.trim(); const c=document.getElementById('car').value.trim(); const f=document.getElementById('from').value; const t=document.getElementById('to').value; const pk=document.getElementById('pickup').value.trim(); const notes=document.getElementById('notes').value.trim(); const sub=encodeURIComponent('Quote Request — ' + (c||'Supercar')); const body=encodeURIComponent(`Name: ${'{'}n{'}'}\nPhone: ${'{'}p{'}'}\nCar: ${'{'}c{'}'}\nFrom: ${'{'}f{'}'}\nTo: ${'{'}t{'}'}\nDelivery/Pick-up: ${'{'}pk{'}'}\nNotes: ${'{'}notes{'}'}`); window.location.href=`mailto:jdeluxuryrental@gmail.com?subject=${'{'}sub{'}'}&body=${'{'}body{'}'}`; })(event)">
+          <div>
+            <label class="text-sm text-neutral-300">Name</label>
+            <input id="name" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required />
+          </div>
+          <div>
+            <label class="text-sm text-neutral-300">Phone</label>
+            <input id="phone" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required />
+          </div>
+          <div>
+            <label class="text-sm text-neutral-300">Preferred Car</label>
+            <input id="car" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" placeholder="e.g., Ferrari 296" />
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="text-sm text-neutral-300">From</label>
+              <input id="from" type="date" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required />
+            </div>
+            <div>
+              <label class="text-sm text-neutral-300">To</label>
+              <input id="to" type="date" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" required />
+            </div>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-sm text-neutral-300">Delivery / Collection</label>
+            <input id="pickup" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" placeholder="e.g., Milan Linate, 10:00" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="text-sm text-neutral-300">Notes</label>
+            <textarea id="notes" rows="3" class="w-full mt-1 px-3 py-2 rounded-xl bg-neutral-800 border border-white/10" placeholder="Preferences, mileage, extra driver…"></textarea>
+          </div>
+          <div class="sm:col-span-2 flex flex-col sm:flex-row gap-3 mt-2">
+            <a href="https://wa.me/13473769433?text=Hi%20JDE%20Luxury%20Rental%2C%20I%27d%20like%20a%20quote." target="_blank" class="flex-1 text-center rounded-2xl bg-green-500 text-black px-5 py-3 font-semibold">WhatsApp</a>
+            <button type="submit" class="flex-1 rounded-2xl bg-amber-400 text-black px-5 py-3 font-semibold">Send by Email</button>
+          </div>
+          <p class="sm:col-span-2 text-xs text-neutral-400 mt-2">“Send by Email” opens your email client with all fields pre-filled.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+  <section class="py-16 bg-gradient-to-b from-neutral-950 to-neutral-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div class="bg-white/5 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Contact</h3>
+          <ul class="mt-3 space-y-2 text-neutral-300 text-sm">
+            <li>Email: <a href="mailto:jdeluxuryrental@gmail.com" class="text-amber-400">jdeluxuryrental@gmail.com</a></li>
+            <li>Phone / WhatsApp: <a href="tel:+390000000000" class="text-amber-400">+1 347 376 9433</a></li>
+            <li>Instagram: <a href="https://instagram.com/jdeluxuryrental_" target="_blank" class="text-amber-400">@jdeluxuryrental_</a></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1600&auto=format&fit=crop" alt="Luxury garage" class="w-full h-56 object-cover"/>
+        </div>
+      </div>
+      <p class="text-xs text-neutral-500 mt-6">© 2025 JDE Luxury Rental. All rights reserved.</p>
+    </div>
+  </section>
+  <div class="sticky-cta z-50">
+    <a href="index.html#quote" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-black px-6 py-3 font-semibold shadow-lg">Get Instant Quote</a>
   </div>
-</header>
-
-
-<section class="hero" style="--hero:url('https://source.unsplash.com/MUHn1U_DBUk/1920x1080')">
-  <div class="container">
-    <h1>Luxury & Supercar Rental Across Europe</h1>
-    <p>Rent Ferrari, Lamborghini, Porsche, Mercedes & Range Rover with concierge delivery to hotels, airports & villas. Transparent quotes, clear contracts, 24/7 assistance.</p>
-    <div class="cta">
-      <a class="btn btn-brand" href="contact.html">Get Instant Quote</a>
-      <a class="btn btn-outline" href="fleet.html">Explore Fleet</a>
-    </div>
-    <div class="badges">
-      <span class="badge">Pan‑European coverage</span>
-      <span class="badge">Door‑to‑door delivery</span>
-      <span class="badge">No hidden fees</span>
-      <span class="badge">24/7 support</span>
-    </div>
-    <p class="subline">Rome • Milan • Como • Costa Smeralda • Amalfi • Florence • Venice • Monaco • Marbella • St. Tropez • Nice • Geneva • Zurich</p>
-  </div>
-</section>
-
-
-<main class="container section">
-  <h2>Popular Cities</h2>
-  <p>Rome, Milan, Como, Costa Smeralda, Amalfi, Florence, Venice, Monaco, Marbella, St. Tropez, Nice, Geneva, Zurich.</p>
-</main>
-
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>JDE Luxury Rental</h4>
-      <p>European luxury &amp; supercar rental. Concierge delivery to hotels, airports &amp; villas.</p>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <p>Email: <a href="mailto:jdeluxuryrental@gmail.com">jdeluxuryrental@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/13473769433" target="_blank">+1 347 376 9433</a></p>
-      <p>Instagram: <a href="https://instagram.com/jdeluxuryrental_" target="_blank">@jdeluxuryrental_</a></p>
-    </div>
-    <div>
-      <h4>Legal</h4>
-      <p><a href="privacy.html">Privacy Policy</a></p>
-      <p><a href="terms.html">Terms &amp; Conditions</a></p>
-      <p><a href="sitemap.xml">Sitemap</a></p>
-    </div>
-  </div>
-</footer>
 </body>
 </html>
-

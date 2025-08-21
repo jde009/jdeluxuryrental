@@ -1,57 +1,87 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Locations — JDE Luxury Rental</title>
-  <meta name="description" content="Luxury & supercar rental in Rome, Milan, Como, Costa Smeralda, Amalfi, Florence, Venice, Monaco, Marbella, St. Tropez, Nice, Geneva, Zurich.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="canonical" href="https://jde009.github.io/jdeluxuryrental/locations.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Locations — Luxury Car Hire Across Europe | JDE Luxury Rental</title>
+  <link rel="canonical" href="https://example.com/locations.html" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Luxury car hire locations in Europe: Milan, Rome, Monaco, Nice, Cannes, Paris, Barcelona, Ibiza, Madrid, Zurich, Geneva, London. Concierge delivery by JDE Luxury Rental." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="Locations — Luxury Car Hire Across Europe | JDE Luxury Rental" />
+  <meta property="og:description" content="Luxury car hire locations in Europe: Milan, Rome, Monaco, Nice, Cannes, Paris, Barcelona, Ibiza, Madrid, Zurich, Geneva, London. Concierge delivery by JDE Luxury Rental." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1541443131876-b8dfbd40c140?q=80&w=1600&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🏎️</text></svg>">
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: blur(8px); }
+    .sticky-cta { position: fixed; bottom: 14px; left: 50%; transform: translateX(-50%); }
+  </style>
 </head>
-<body>
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="index.html">JDE Luxury Rental</a>
-    <nav>
-      <a href="fleet.html">Fleet</a>
-      <a href="locations.html">Locations</a>
-      
-      <a href="faq.html">FAQ</a>
-      <a href="about.html">About</a>
-      <a class="btn" href="contact.html">Get a Quote</a>
-  </nav>
-  </div>
-</header>
+<body class="bg-neutral-950 text-white font-[Inter]">
+  <header class="fixed top-0 inset-x-0 z-50 bg-neutral-950/80 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <a href="index.html" class="text-xl sm:text-2xl font-extrabold tracking-tight">JDE<span class="text-amber-400">.</span></a>
+        <nav class="hidden md:flex gap-6 text-sm text-neutral-300">
+          <a href="fleet.html" class="hover:text-white">Fleet</a>
+          <a href="locations.html" class="hover:text-white">Locations</a>
+          
+          <a href="faq.html" class="hover:text-white">FAQ</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </nav>
+        <a href="index.html#quote" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-black px-4 py-2 font-semibold shadow-lg hover:brightness-95">Get a Quote</a>
+      </div>
+    </div>
+  </header>
+  <main class="pt-20">
 
-<main class="container section">
-  <h1>Locations</h1>
-  <p>Cities with quick-quote links.</p>
-  <div class="grid">
-<a class="card" href="contact.html?city=Rome"><strong>Rome</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Milan"><strong>Milan</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Como"><strong>Como</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Costa%20Smeralda"><strong>Costa Smeralda</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Amalfi"><strong>Amalfi</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Florence"><strong>Florence</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Venice"><strong>Venice</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Monaco"><strong>Monaco</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Marbella"><strong>Marbella</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=St.%20Tropez"><strong>St. Tropez</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Nice"><strong>Nice</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Geneva"><strong>Geneva</strong><br><span class="muted">Get a quote</span></a><a class="card" href="contact.html?city=Zurich"><strong>Zurich</strong><br><span class="muted">Get a quote</span></a>
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">Locations</h1>
+    <p class="text-neutral-300 mb-8">Click a city to prefill your quote — fewer clicks, faster booking.</p>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Rome, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Rome Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Milan, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Milan Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Como, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Como Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Costa Smeralda, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Costa Smeralda Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Amalfi, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Amalfi Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Florence, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Florence Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Venice, Italy');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Venice Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Monaco');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Monaco Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Marbella, Spain');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Marbella Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'St. Tropez, France');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">St. Tropez Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Nice, France');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Nice Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Geneva, Switzerland');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Geneva Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a>
+<a href="index.html#quote" onclick="document.getElementById('pickup') && (document.getElementById('pickup').value = 'Zurich, Switzerland');" class="block bg-white/5 rounded-2xl p-5 hover:bg-white/10"><h3 class="font-bold">Zurich Luxury Car Hire</h3><p class="text-neutral-300 text-sm mt-1">Delivery & collection available.</p></a></div>
   </div>
-</main>
+</section>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <h4>JDE Luxury Rental</h4>
-      <p>European luxury &amp; supercar rental. Concierge delivery to hotels, airports &amp; villas.</p>
+  </main>
+  <section class="py-16 bg-gradient-to-b from-neutral-950 to-neutral-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div class="bg-white/5 rounded-2xl p-6">
+          <h3 class="text-xl font-bold">Contact</h3>
+          <ul class="mt-3 space-y-2 text-neutral-300 text-sm">
+            <li>Email: <a href="mailto:jdeluxuryrental@gmail.com" class="text-amber-400">jdeluxuryrental@gmail.com</a></li>
+            <li>Phone / WhatsApp: <a href="tel:+390000000000" class="text-amber-400">+1 347 376 9433</a></li>
+            <li>Instagram: <a href="https://instagram.com/jdeluxuryrental_" target="_blank" class="text-amber-400">@jdeluxuryrental_</a></li>
+          </ul>
+        </div>
+        <div class="rounded-2xl overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1600&auto=format&fit=crop" alt="Luxury garage" class="w-full h-56 object-cover"/>
+        </div>
+      </div>
+      <p class="text-xs text-neutral-500 mt-6">© 2025 JDE Luxury Rental. All rights reserved.</p>
     </div>
-    <div>
-      <h4>Contact</h4>
-      <p>Email: <a href="mailto:jdeluxuryrental@gmail.com">jdeluxuryrental@gmail.com</a></p>
-      <p>WhatsApp: <a href="https://wa.me/13473769433" target="_blank">+1 347 376 9433</a></p>
-      <p>Instagram: <a href="https://instagram.com/jdeluxuryrental_" target="_blank">@jdeluxuryrental_</a></p>
-    </div>
-    <div>
-      <h4>Legal</h4>
-      <p><a href="privacy.html">Privacy Policy</a></p>
-      <p><a href="terms.html">Terms &amp; Conditions</a></p>
-      <p><a href="sitemap.xml">Sitemap</a></p>
-    </div>
+  </section>
+  <div class="sticky-cta z-50">
+    <a href="index.html#quote" class="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-black px-6 py-3 font-semibold shadow-lg">Get Instant Quote</a>
   </div>
-</footer>
 </body>
 </html>
-
