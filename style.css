@@ -63,3 +63,44 @@ url('assets/cars/ferrari-812-superfast.jpg') center/cover no-repeat;z-index:-1}
 .kpi b{font-size:24px}
 form.jde-form{display:grid;gap:10px;max-width:640px}
 form.jde-form input, form.jde-form textarea{width:100%;padding:12px;border-radius:12px;border:1px solid #2a2a2a;background:#0f0f0f;color:#fff}
+
+
+/* --- Mobile-first polish (v4) --- */
+html{scroll-behavior:smooth}
+:root{--container-pad:20px}
+.container{padding:0 var(--container-pad)}
+.btn{min-height:48px;line-height:1.2;font-weight:700}
+nav .container{flex-wrap:wrap}
+nav ul{flex-wrap:wrap}
+.site-header .btn{margin-left:auto}
+
+/* Typography scale */
+h1{font-size:clamp(28px,7vw,48px)}
+.h2{font-size:clamp(20px,5vw,28px)}
+
+/* Grid behavior on small screens */
+@media (max-width: 680px){
+  .grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .about-hero{grid-template-columns:1fr}
+  .hero{padding:96px 0 80px}
+  .nav{gap:12px}
+  nav ul{gap:10px}
+  .site-footer{padding:22px 0}
+  .footer-grid{grid-template-columns:1fr}
+  .kpis{grid-template-columns:repeat(3,1fr)}
+}
+
+/* Improve image rendering on mobile */
+img{image-rendering:auto;height:auto}
+
+/* Touch target spacing for links in nav/footer on mobile */
+@media (pointer: coarse){
+  nav a{padding:8px 6px;display:inline-block}
+  .footer-grid a{padding:6px 0;display:inline-block}
+}
+
+/* Prevent content from touching edges on very small screens */
+@media (max-width:380px){
+  :root{--container-pad:14px}
+}
